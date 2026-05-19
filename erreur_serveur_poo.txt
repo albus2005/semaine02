@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/storage/emulated/0/arisv020/DEV/semaine02/exercice_j14_v3_serveur_poo.py", line 28, in <module>
+    s.ecouter()
+    ~~~~~~~~~^^
+  File "/storage/emulated/0/arisv020/DEV/semaine02/exercice_j14_v3_serveur_poo.py", line 16, in ecouter
+    conn, adresse = self.serveur.accept()          #OSError: [Errno 22] Invalid argument
+                    ~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socket.py", line 295, in accept
+    fd, addr = self._accept()
+               ~~~~~~~~~~~~^^
+OSError: [Errno 22] Invalid argument
