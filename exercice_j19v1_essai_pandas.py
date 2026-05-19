@@ -9,8 +9,9 @@ data = {
 'poids': [12, 15, 10, 18, 14],
 'age': [8, 23, 45, 67, 34]
 }
-df = df = pd.DataFrame(data)
+df = pd.DataFrame(data)
 print(f"La feuille de donnees: {df}")
-
+print(df["age"])
+print(df[df['age'] >18])
 
 
