@@ -13,5 +13,5 @@ df = pd.DataFrame(data)
 print(f"La feuille de donnees: {df}")
 print(df["age"])
 print(df[df['age'] >18])
-
+print(type(df['age'].values))
 

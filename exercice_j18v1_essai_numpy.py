@@ -1,7 +1,7 @@
 import csv 
 import numpy as np
 
-with open("patient_bukavu.csv", "r") as file :
+with open("patients_bukavu.csv", "r") as file :
     contenu = csv.DictReader(file)
 
     poids_colonne = []
