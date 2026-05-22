@@ -1,7 +1,7 @@
 import pandas as pd
 
 try:
-    patients_sale = pd.read_csv("hospital_sale.csv")
+    patients_sale = pd.read_csv("hospital_bukavu.csv")
 except FileNotFoundError:
     print("Fichier Introuvable. Verifier le chemin.")
     patients_sale = pd.DataFrame()  # Création d'un DataFrame vide pour éviter l'erreur
