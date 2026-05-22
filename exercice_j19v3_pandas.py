@@ -16,7 +16,7 @@ patients_propres['poids'] = patients_propres['poids'].fillna(patients_propres['p
 
 patients_propres.loc[patients_propres['temperature'] > 42, 'temperature'] /= 10
 
-patients_propres['nom'] = patients_propres['nom'].str.capitalize()
+patients_propres['nom'] = patients_propres['nom'].str.title()
 patients_propres['sexe'] = patients_propres['sexe'].str.capitalize()
 
 print("Data Frame propre :")
