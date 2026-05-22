@@ -4,6 +4,7 @@ try:
     patients_sale = pd.read_csv("hospital_sale.csv")
 except FileNotFoundError:
     print("Fichier Introuvable. Verifier le chemin.")
+    patients_sale = pd.DataFrame()  # Création d'un DataFrame vide pour éviter l'erreur
 
 print("Contenu de hospital_sale.csv")
 
