@@ -5,9 +5,7 @@ try:
 except FileNotFoundError:
     print("Fichier Introuvable. Verifier le chemin.")
 
-print("Contenu de patients_sale.csv")
-print(patients_sale.isnull())
-print(patients_sale.isnull().sum())
+print("Contenu de hospital_sale.csv")
 
 patients_sans_doublon = patients_sale.drop_duplicates()
 
