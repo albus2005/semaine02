@@ -2,7 +2,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 
+# Après y_pred = model.predict(X_test)
 # Données patients Bukavu
 data = {
     'district':   [1, 2, 1, 3, 2, 1, 3, 2, 1, 3],
@@ -41,6 +44,10 @@ if model.predict(nouveau_patient) == 1 :
     
 else:
     print("Pas malade")
+
+
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))
 
 """
 fit()     --> reçoit X_train ET y_train
