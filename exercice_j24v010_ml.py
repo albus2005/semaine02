@@ -34,7 +34,7 @@ y_pred = model.predict(X_test)
 # Étape 6 : comparer y_test (réalité) et y_pred (prédiction)
 print(accuracy_score(y_test, y_pred))
 nouveau_patient = [[2, 0, 6]]
-print(f"Le patient zst malade si : {model.predict(nouveau_patient})
+print(f"Le patient zst malade si : {model.predict(nouveau_patient)}")
 """
 fit()     --> reçoit X_train ET y_train
               (questions + réponses pour apprendre)
