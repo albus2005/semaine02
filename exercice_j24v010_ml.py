@@ -17,8 +17,6 @@ df = pd.DataFrame(data)
 X = df[['district', 'acces_eau', 'age']]
 y = df['malade']
 
-# Étape 2 : train/test split
-X_train, X_test, y_train, y_test = train_test_split(...)
 # Étape 2 : train_test_split prend 4 arguments
 # X, y, la taille du test, et random_state pour reproduire les résultats
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
