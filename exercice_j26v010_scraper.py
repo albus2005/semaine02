@@ -18,4 +18,4 @@ tableau = soup.find('table')
 
 # Étape 4 : lire avec Pandas
 df = pd.read_html(str(tableau))[0]
-print(df)
+print(type(df))
