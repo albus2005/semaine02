@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 # Paramètres
 N     = 1_000_000
-beta  = 0.3
+beta  = 0.1
 gamma = 0.05
 duree = 160
 
