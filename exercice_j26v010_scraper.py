@@ -13,9 +13,8 @@ reponse = requests.get(
 
 
 soup = BeautifulSoup(reponse.text, 'html.parser')
-# Étape 3 : trouver le tableau
-tableau = soup.find('table')
 
-# Étape 4 : lire avec Pandas
-df = pd.read_html(str(tableau))[0]
-print(type(df))
+# Étape 4 : trouver tous les tableaux de la page
+tableaux = pd.read_html(reponse.text)
+df = tableaux[0]
+print(df.head())
