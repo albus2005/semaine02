@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 N     = 1_000_000
 beta  = 0.1
 gamma = 0.05
-duree = 160
+duree = 500
 
 # Conditions initiales
 S = 999_990
@@ -48,4 +48,4 @@ plt.title('S. I. R')
 plt.xlabel('DUREE')
 plt.ylabel('CAS')
 plt.legend()
-plt.savefig("sir_bukavu.png")
+plt.savefig("sir_bukavu2.png")
