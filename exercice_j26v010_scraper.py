@@ -7,7 +7,7 @@ headers = {
 }
 
 reponse = requests.get(
-    'https://en.wikipedia.org/wiki/List_of_African_countries_by_population',
+    'https://www.worldometers.info/world-population/africa-population'
     headers=headers
 )
 
@@ -15,6 +15,6 @@ reponse = requests.get(
 soup = BeautifulSoup(reponse.text, 'html.parser')
 
 # Étape 4 : trouver tous les tableaux de la page
-tableaux = pd.read_html(reponse.text)
+tableaux = pd.read_html(url)
 df = tableaux[0]
 print(df.head())
