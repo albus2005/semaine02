@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 import pandas as pd
 
 headers = {
@@ -11,10 +10,8 @@ reponse = requests.get(
     headers=headers
 )
 
-
-soup = BeautifulSoup(reponse.text, 'html.parser')
-
-# Étape 4 : trouver tous les tableaux de la page
-tableaux = pd.read_html(url)
+# Lecture directe du HTML (pas besoin de BeautifulSoup si tu utilises pd.read_html)
+tableaux = pd.read_html(reponse.text)
 df = tableaux[0]
+
 print(df.head())
